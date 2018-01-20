@@ -1,6 +1,7 @@
 [Unit]
 Description=A mosquitto IoT controller service
-After=network.target
+Requires=mosquitto.service
+After=mosquitto.service
 
 [Service]
 Type=simple
